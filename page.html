@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="fpage.css">
+    <title>9iceygal</title>
+</head>
+<body>
+    <div class="row">
+        <div class="col-3 mt-3">
+            <h1 class="ms-3">9ICEY<span>GAL</span></h1>
+        </div>
+        <div class="col-9">
+            <div class="input-container">
+                <input type="text" class="input-field" id="searchInput" placeholder="Search movies..." onchange="searchMovies()">
+                <i class="bi bi-search input-icon "></i>
+              </div>
+        </div>
+    </div>
+    <div class="tabs-container">
+      <div class="tab" onclick="changeTab('trending')">Trending</div>
+      <div class="tab" onclick="changeTab('popular')">Most Popular</div>
+      <div class="tab" onclick="changeTab('top_rated')">Top Rated</div>
+      <div class="tab" onclick="changeTab('upcoming')">Upcoming</div>
+      <div class="tab" onclick="changeTab('now_playing' )">Cinemas Now Showing</div>
+      <div class="tab" onclick="changeTab('28')">Action</div>
+      <div class="tab" onclick="changeTab('53')">Thriller</div>
+      <div class="tab" onclick="changeTab('12')">Adventure</div>
+      <div class="tab" onclick="changeTab('27')">Horror</div>
+      <div class="tab" onclick="changeTab('35')">Comedy</div>
+      <div class="tab" onclick="changeTab('10749')">Romance</div>
+      <div class="tab" onclick="changeTab('16')">Animation</div>
+      <div class="tab" onclick="changeTab('878')">Sci-Fi</div>
+      <div class="tab" onclick="changeTab('80')">Crime</div>
+      <div class="tab" onclick="changeTab('99')">Documentry</div>
+      <div class="tab" onclick="changeTab('10402')">Music</div>
+      <div class="tab" onclick="changeTab('14')">Fantasy</div>
+      <div class="tab" onclick="changeTab('10752')">War</div>
+      <div class="tab" onclick="changeTab('10751')">Family</div>
+      <div class="tab" onclick="changeTab('18')">Drama</div>
+      <div class="tab" onclick="changeTab('10770')">TV Movie</div>
+    </div>
+    <div class="content mt-4" id="content">
+      <!-- Content of the tabs will be displayed here -->
+      <div class="tab-content" id="trending"></div>
+      <div class="tab-content "  id="popular"></div>
+      <div class="tab-content " id="latest"></div>
+      <div class="tab-content " id="top_rated"></div>
+      <div class="tab-content" id="upcoming"></div>
+      <div class="tab-content" id="now_playing"></div>
+      <div class="tab-content" id="28"></div>
+      <div class="tab-content" id="53"></div>
+      <div class="tab-content" id="12"></div>
+      <div class="tab-content" id="27"></div>
+      <div class="tab-content" id="35"></div>
+      <div class="tab-content" id="10749"></div>
+      <div class="tab-content" id="16"></div>
+      <div class="tab-content" id="878"></div>
+      <div class="tab-content" id="80"></div>
+      <div class="tab-content" id="99"></div>
+      <div class="tab-content" id="10402"></div>
+      <div class="tab-content" id="14"></div>
+      <div class="tab-content" id="10752"></div>
+      <div class="tab-content" id="10751"></div>
+      <div class="tab-content" id="18"></div>
+      <div class="tab-content" id="10770"></div>
+    </div>
+
+    <script src="/funtionspage.js"></script>
+    <script src="/fetch.js"></script>
+    
+</body>
+</html>

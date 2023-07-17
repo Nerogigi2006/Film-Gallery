@@ -1,0 +1,154 @@
+body{
+    background-color: black;
+    font-family: 'Oswald', sans-serif;
+    width: 1336px;
+    overflow-x: hidden;
+}
+.container {
+    width: 1500px;
+}
+.tabs-container {
+  overflow-x: auto;
+  white-space: nowrap;
+  width: 1500px;
+}
+
+.tabs-container::-webkit-scrollbar {
+  height: 0px;
+}
+
+.tabs-container::-webkit-scrollbar-thumb {
+  background-color: #999;
+  border-radius: 5px;
+}
+
+.tabs-container::-webkit-scrollbar-track {
+  background-color: #eee;
+  
+}
+
+.tab {
+  display: inline-block;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 24px;
+  color: white;
+}
+.tab:hover {
+  background-color: darkred;
+}
+
+.content{
+  margin-left: -35px;
+}
+  
+h1{
+    color: darkred;
+}
+h2{
+    color: darkred;
+}
+span{
+    color: whitesmoke;
+}
+button{
+    color:darkred!important;
+    font-size: 25px!important;
+}
+img{
+  height: 400px;
+  width: 300px!important;
+}
+.tab-content {
+  /* padding-right: -50px; */
+  padding-left: 0px;
+  margin: 43px;
+}
+
+.main{
+  flex-basis: 25%;
+}
+.text{
+  width: 300px!important;
+}
+.input-container {
+  position: relative;
+  margin-left: 750px;
+  margin-top: 25px!important;
+}
+
+.input-field {
+  padding-right: 40px; /* Add padding to the left to accommodate the icon */
+  width: 250px;
+  border-radius: 5px;
+  padding: 2px;
+}
+.input-field:focus {
+  padding-right: 40px; /* Add padding to the left to accommodate the icon */
+  /* width: 250px; */
+  border-radius: 5px;
+  border: 1px solid darkred ;
+  padding: 2px;
+}
+
+.input-icon {
+  position: absolute;
+  top: 50%;
+  left: 220px; /* Adjust the left value to position the icon as desired */
+  transform: translateY(-50%);
+  color: black; /* Set the color of the icon */
+  font-size: 20px;
+}
+.details {
+  display: none;
+  /* position details div below the main div */
+  position: absolute;
+  top: 100%;
+  left: 0;
+  /* add any other styling as needed */
+}
+
+
+@media (max-width: 767px) {
+  body{
+    width: 100px;
+    height: 1000px;
+    margin: 0;
+  }
+  .tab-content {
+    /* padding-right: -50px; */
+    padding-left: 0px;
+    margin: 43px;
+  }
+  .tabs-container {
+    overflow-x: auto;
+    white-space: nowrap;
+    width: 380px;
+  }
+ .input-container {
+  /* position: relative; */
+  margin-bottom: 50px;
+  margin-left: 80px;
+  margin-top: 18px!important;
+}
+.row{
+  width: 450px!important;
+  /* padding-bottom: 100px!important; */
+margin-top: 0px!important;
+}
+.input-field {
+  padding-right: 0px; /* Add padding to the left to accommodate the icon */
+  width: 180px;
+  border-radius: 5px;
+  border: 3px solid ;
+  padding: 2px;
+}
+.input-icon {
+  position: absolute;
+  top: 50%;
+  left: 150px; /* Adjust the left value to position the icon as desired */
+  transform: translateY(-50%);
+  color: black; /* Set the color of the icon */
+  font-size: 20px;
+}
+}
