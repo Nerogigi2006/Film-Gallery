@@ -97,7 +97,7 @@ const updateui = (response, ActivetabContent) => {
     }
     html += `
       <div class="main col-lg-3 hoverable">
-        <img src="${posterPath ? posterPath : backdrop}" alt="" onerror=HideParentContainer(event)>
+        <img src="/${posterPath ? posterPath : backdrop}" alt="" onerror=HideParentContainer(event)>
         <div class="text">
           <span class="overview">${truncatedOverview}</span>
           <h2>${genre_ids.title ? genre_ids.title : genre_ids.name}</h2>
